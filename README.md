@@ -4,10 +4,10 @@ Para este ejercicio se pide documentar la API utilizando swagger y desplegar la 
 
 La estructura actualizada será la siguiente:
 - docs
-  - components.js //componentes reutilizables para la documentación
-  - basicInfo.js // información básica de la API
-  - tasks.js // documentación de los diferentes endpoints
+  - basicInfo.js // información básica de la API OK!
   - index.js // importaremos los diferentes archivos y los exportaremos
+  - components.js //componentes reutilizables para la documentación OK!
+  - tasks.js // documentación de los diferentes endpoints
 - config
   - config.js // Código de la conexión a la base de datos.
 - env
@@ -19,7 +19,7 @@ La estructura actualizada será la siguiente:
 - index.js // Añadiremos nuestro servidor, conexión a la base de datos y uniremos el resto de la aplicación
 
 ## Endpoints de la API a documentar
-- POST /create: Endpoint para crear una tarea.
+- POST /create: Endpoint para crear una tarea. OK!
 - GET /: Endpoint para traer todas las tareas.
 - PUT /id/:_id: Endpoint para actualizar una tarea y que solo se pueda cambiar el título de la tarea. Es decir, que no me deje cambiar el campo  “completed” desde este endpoint, sino solo, el título.
 - DELETE /id/:_id: Endpoint para eliminar una tarea.

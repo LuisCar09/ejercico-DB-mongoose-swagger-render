@@ -6,6 +6,8 @@ const Task = require("../models/Task.js");
 router.post("/create", async(req, res) => {
     try {
         const task = await Task.create({...req.body, completed: false });
+        console.log(task);
+        
         res.status(201).send({ message: "Task successfully created", task });
     } catch (error) {
         console.error(error);
@@ -20,6 +22,7 @@ router.post("/create", async(req, res) => {
 router.get("/", async(req, res) => {
     try {
         const tasks = await Task.find();
+        
         res.send(tasks);
     } catch (error) {
         console.error(error);
