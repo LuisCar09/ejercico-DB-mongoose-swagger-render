@@ -8,7 +8,7 @@ module.exports = {
                     Tasks: "Create a task",
                 },
                 description: "Create Task",
-                operationId: "createUser",
+                operationId: "createTask",
                 parameters: [],
                 requestBody: {
                     content: {
@@ -19,8 +19,8 @@ module.exports = {
                         }
                     }
                 },
-                response: {
-                    200: {
+                responses: {
+                    201: {
                         description: "Task created successfully",
                     },
                     500: {
